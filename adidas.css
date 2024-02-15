@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('web-bg.png');
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.logo img {
+    height: 150px;
+    width: 150px;
+    margin-left: 50px;
+}
+
+.cart-logo img {
+    height: 50px;
+    width: 50px;
+    margin-right: 50px;
+}
+
+header {
+
+    padding: 10px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo, .cart-logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.adidas p {
+    font-size: 50px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.adidas {
+    padding: 0px;
+    text-align: center;
+}
+
+footer {
+    margin: auto;
+    text-align: center;
+}
+
+.brands {
+    margin: 50px;
+    column-count: 3;
+    text-align: center; /* Center align the brands div */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.brands a {
+    text-decoration: none;
+    color: black;
+}
+
+.brands img {
+    padding: 30px;
+    height: 220px;
+    width: 336px;
+    max-width: 100%;
+}
+
+
+footer hr {
+    width: 50%;
+    margin: 20px auto;
+}

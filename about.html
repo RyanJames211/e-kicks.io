@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-kicks | About us</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="home.html"><img src="logo.png" alt="Main Logo"></a></div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="cart-logo">
+        <a href="#cart-link"><img src="cart.png" alt="Cart Logo"></a>
+    </div>
+</header>
+<div class="container">
+    <div class="text-center">
+        <button type="button" class="btn btn-primary">Browse Our Shop</button>
+    </div>
+</div>
+
+<div class="creators text-center">
+    <h1>Developers</h1>
+</div>
+<div class="members container">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="members/adri.jpg" alt="Adri's Image">
+            <p>Mark Adrian Manaig</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="members/ryan.jpg" alt="Ryan's Image">
+            <p>Ryan James D. Velasquez</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="members/andoy.jpg" alt="Andoy's Image">
+            <p>Mark Andrei De Chavez</p>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".btn-primary").click(function(event){
+            event.preventDefault();
+            $("body").fadeOut(1000, function(){
+                window.location.href = "shop.html";
+            }); 
+        });
+    });
+</script>  
+<footer class="text-center">
+    <hr>
+    <p>&copy; 2024 E-Kicks. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

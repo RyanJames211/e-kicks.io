@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Kicks | Home</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="home.html"><img src="logo.png" alt="Main Logo"></a></div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="cart-logo">
+        <a href="shop.html"><img src="cart.png" alt="Cart Logo"></a>
+    </div>
+    
+</header>
+<div class="Step">
+    <p>Step into Comfort, Stride out in Style</p>
+</div>
+<div class="container">
+    <div class="text-center">
+        <a href="shop.html" class="btn btn-primary">Browse Our Shop</a>
+    </div>
+
+</div>
+    <div class="brands text-center">
+        <img src="brands (1).png">
+        <img src="brands2.png">
+    </div>
+<div class="location">
+    <p>Our Physical Store is located At City College of Calamba</p>
+</div>
+<div class="mission-vision">
+    <h1>Our Mission</h1>
+    <p>At E-Kicks, our mission is to be the ultimate destination where every step meets style. We're dedicated to providing a 
+        diverse array of top-quality shoes from renowned brands, catering to every individual's unique taste and preferences. 
+        Our commitment is not just about selling shoes; it's about offering an exceptional shopping experience, ensuring that 
+        each customer finds the perfect pair that resonates with their personality and needs.</p>
+    <h2>Vision</h2>
+    <p>We envision a future where diversity in footwear isn't just about brands but about personal expression and comfort. 
+        We aspire to be a hub that transcends the traditional shoe retail experience, offering an ever-expanding collection 
+        that embodies trends, innovation, and timeless classics. Our goal is to become the go-to platform where customers discover,
+         explore, and find the ideal shoes that become a seamless part of their everyday story.</p>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".btn-primary").click(function(event){
+            event.preventDefault();
+            $("body").fadeOut(1000, function(){
+                window.location.href = "shop.html";
+            }); 
+        });
+    });
+</script>
+<footer>
+    <hr>
+    <p>&copy; 2024 E-Kicks. All rights reserved.</p>
+</footer>
+</body>
+</html>

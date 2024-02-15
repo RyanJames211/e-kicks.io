@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-kicks | Collections</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="collections.css">
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="home.html"><img src="logo.png" alt="Main Logo"></a></div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="cart-logo">
+        <a href="#cart-link"><img src="cart.png" alt="Cart Logo"></a>
+    </div>
+</header>
+
+<div class="collections">
+    <p>Collections</p>
+</div>
+
+<div class="container">
+    <div class="text-center">
+        <button type="button" class="btn btn-primary">Browse Our Shop</button>
+    </div>
+</div>
+
+<div class="brands text-center">
+    <p>Click the Image to see products.</p>
+    <a href="nike.html"><img src="brands/nike.png"></a>
+    <a href="adidas.html"><img src="brands/adidas.png"></a>
+    <a href="carhartt.html"><img src="brands/carhartt.png"></a>
+    <a href="bape.html"><img src="brands/bape.png"></a>
+    <a href="nb.html"><img src="brands/nb.png"></a>
+    <a href="vans.html"><img src="brands/vans.png"></a>
+    <a href="dior.html"><img src="brands/dior.png"></a>
+    <a href="LV.html"><img src="brands/LV.png"></a>
+    <a href="champion.html"><img src="brands/champion.png"></a>
+    <a href="DC.html"><img src="brands/dc.png"></a>
+    <a href="fila.html"><img src="brands/fila.png"></a>
+    <a href="birkenstock.html"><img src="brands/birkenstock.png"></a>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".btn-primary").click(function(event){
+            event.preventDefault();
+            $("body").fadeOut(1000, function(){
+                window.location.href = "shop.html";
+            }); 
+        });
+    });
+</script>  
+<footer class="text-center">
+    <hr>
+    <p>&copy; 2024 E-Kicks. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
